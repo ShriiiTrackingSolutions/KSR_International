@@ -1,0 +1,255 @@
+*:root{
+  --primary-color: #faaf40;
+  --secondary-color: #922c2b;
+  --accentColour: #2b3283;
+  --background-color: #171717;
+  --grey:#b6b5b5;
+  --darkGrey: #7a7a7a;
+  --overlay: #2b328377;
+  --lightBgCream: #ffddaa49;
+  --brandHover:#6b2120;
+}
+
+@media only screen and (min-width: 1920px) {
+
+
+}
+
+@media (max-width: 1399.98px) {
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {
+}
+
+@media (max-width: 1199.98px) {
+  .display-3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  
+  .secH {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .therdH {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .display-3 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  
+  .secH {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .therdH {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+.navbar-nav {
+  gap: 4px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.miniHeader{
+  display: none;
+}
+
+.navbar-nav .nav-link{
+  font-weight: 600;
+  color: var(--background-color);
+}
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .show > .nav-link {
+  color: var(--secondary-color);
+}
+.navbar-nav .nav-link.active{
+position: relative;
+color: var(--secondary-color);
+}
+.bg-light{
+  background-color: #ffffff !important;
+}
+.Banner{
+  height: calc(100vh - 91px);
+}
+#ca1.owl-carousel .item {
+  height: calc(100vh - 91px);
+}
+
+}
+
+
+
+@media (max-width: 767.98px) {
+  .display-3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+  
+  .secH {
+    font-size: 28px;
+    line-height: 52px;
+  }
+  
+  .therdH {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .footer.defaultPadding{
+    padding: 34px 0;
+  }
+  .footer .secH{
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .footer .container>.row{
+    justify-content: center;
+    row-gap: 40px;
+  }
+  
+  .footer .social-icons{
+  justify-content: center;
+  }
+  .footer .exploreLinks ul li{
+  text-align: left;
+  }
+
+  .footer-brand{
+    display: table !important;
+    margin: auto;
+  }
+  .footer {
+    text-align:center;
+  }
+  .footer .locationLink{
+    max-width: 304px;
+  }
+  .footer ul:not(.footer .exploreLinks1 ul) {
+    max-width: 304px;
+    margin: auto;
+  }
+  .footer .exploreLinks1 ul{
+    max-width: 352px; 
+  }
+  .footer .exploreLinks1 ul li{
+    text-align: left;
+    }
+  .footer .exploreLinks1 ul {
+    margin: auto;
+  }
+  .footer .exploreLinks ul {
+    width: 143px ;
+    max-width: 143px !important;
+    margin: auto;
+  }
+
+  .BannerWithText{
+    padding: 50px 20px;
+  }
+
+  /* #ca1.owl-carousel .item2 {
+    background:linear-gradient(#00000073, #00000073), url("../image/BannerMob2.jpeg")
+      no-repeat center;
+  } */
+  .nav-pills .nav-link {
+    clip-path: none;
+}
+}
+
+
+
+
+@media (max-width: 575.98px) {
+  #ca1.owl-carousel .bannerCard {
+    margin: auto;
+  }
+
+
+  .Banner .owl-nav button {
+    pointer-events: initial;
+    height: 40px;
+    width: 44px;
+    background-color: var(--skyblue) !important;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: var(--lightGrey) !important;
+  }
+
+  .bannertext1 {
+    padding: 30px !important;
+    color: #ffffff;
+  }
+  
+
+  .bannertext1 .display-3 a {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-height: 539.98px){
+  #ca1.owl-carousel .item {
+    padding: 80px 12px;
+    background-color: red;
+    height: unset;
+  }
+  #ca1.owl-carousel .item > .row {
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: unset;
+    width: auto;
+  }
+ 
+ 
+}
+
+@media only screen and (max-height: 539.98px) and (max-width: 1024px){
+  #ca1.owl-carousel .item {
+    padding: 80px 12px;
+    background-color: red;
+    height: unset;
+  }
+  #ca1.owl-carousel .item > .row {
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: unset;
+    width: auto;
+  }
+
+
+  .desktopImg{
+   display: block !important;
+  }
+ 
+  .mobileImg{
+   display: none !important;
+  }
+ 
+}
+
+
+
