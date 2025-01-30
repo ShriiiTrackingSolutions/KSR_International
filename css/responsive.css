@@ -41,6 +41,9 @@
     font-size: 26px;
     line-height: 40px;
   }
+  .strategicCard{
+    min-height: 388px;
+  }
 
 }
 
@@ -95,6 +98,14 @@ color: var(--secondary-color);
 }
 #ca1.owl-carousel .item {
   height: calc(100vh - 91px);
+}
+
+.footer .container>.row{
+  row-gap: 30px;
+}
+
+.strategicCard{
+  min-height: unset;
 }
 
 }
@@ -207,6 +218,9 @@ color: var(--secondary-color);
   .bannertext1 .display-3 a {
     color: #ffffff;
   }
+  .footer .fourthH {
+    margin-bottom: 20px;
+}
 }
 
 @media only screen and (max-height: 539.98px){
