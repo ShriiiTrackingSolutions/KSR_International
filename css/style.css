@@ -577,7 +577,7 @@ background-color: var(--brandHover);
 
 
 .footer {
-  background: linear-gradient(to right,#06162cf3,#06162cf3), url('../image/FooterImg.webp') no-repeat center;
+  background: #2b3283;
   background-size: cover;
 }
 .footer.defaultPadding {
@@ -780,23 +780,84 @@ background-color: var(--brandHover);
 
 /* vision value and mission section start */
 
-.nav-pills{
+.serviceSection .nav-pills{
   flex-direction: column;
 }
-.nav-pills .nav-link {
+.serviceSection .nav-pills .nav-link {
   background: #e0e7ec;
-  padding: 22px;
   color: var(--darkGrey);
   margin-bottom: 8px;
+  font-size: 18px;
   font-weight: 600;
   border: 0;
-  border-radius: 0;
-  clip-path: polygon(0% 0%, 88% 0, 100% 50%, 88% 100%, 0% 100%);
+  border-radius: 60px;
 }
-.nav-pills .nav-link:hover{
+.serviceSection .nav-pills .nav-link:hover{
   background: #408cff;
   color: #ffffff;
 }
+
+
+
+.newBTN {
+  background: linear-gradient(140deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%) !important;
+  border-radius: 45px;
+  text-align: left;
+  padding: 4px;
+  border-style: outset;
+  box-shadow: -6px -5px 18px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.newBTN .c-main {
+  color: rgba(255, 255, 255, 1);
+  padding: 4px 4px 4px 4px;
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0);
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.c-ico .c-blur {
+  background: linear-gradient(318deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%);
+  border-radius: 400px;
+  display: inline-block;
+  aspect-ratio: 1;
+  margin-left: 0;
+  padding: 10px 23px;
+  filter: blur(1px);
+  text-align: center;
+}
+
+.c-ico {
+  position: relative;
+  display: inline-block;
+  margin-top: 4px;
+  margin-right: 20px;
+}
+
+.c-ico .ico-text {
+  position: absolute;
+  left: 50%;
+  font-size: 18px;
+  top: 47%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hovering */
+
+.newBTN:not(.newBTN.active) .c-main {
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0.6);
+  border: 1px solid rgba(26, 26, 26,0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
 
 
 
@@ -832,5 +893,33 @@ background-color: var(--brandHover);
     width: var(--width-mobile) !important;
   }
 }
+
+.hoverZoom{
+  overflow: hidden;
+}
+.hoverZoom img{
+ transition: 0.5s ease-in-out;
+}
+
+.hoverZoom:hover img{
+ scale: 1.1;
+}
+
+.serviceSection .tab-content ul{
+list-style: none;
+padding-left: 20px;
+}
+
+.serviceSection .tab-content ul li{
+  position: relative;
+  padding-left: 28px;
+}
+
+.serviceSection .tab-content ul li svg{
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
 /* vision value and mission section end */
 

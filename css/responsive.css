@@ -108,6 +108,11 @@ color: var(--secondary-color);
   min-height: unset;
 }
 
+.nav-pills .nav-link{
+  font-size: 11px;
+}
+
+
 }
 
 
