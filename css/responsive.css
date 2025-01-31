@@ -16,6 +16,27 @@
 }
 
 @media (max-width: 1399.98px) {
+.PointCardWraper {
+  align-items: center;
+}
+  .WhatWeDoCard{
+    font-size: 16px;
+    padding: 10px 11px;
+    padding-left: 30px;
+  }
+  .PointIcon{
+    width: 52px;
+  }
+  
+  .PointIcon div img{
+    width: 24px;
+  }
+  
+  .leftPoiter {
+    font-size: 16px;
+    padding: 10px 11px;
+    padding-right: 30px;
+  }
 
 }
 
@@ -43,6 +64,18 @@
   }
   .strategicCard{
     min-height: 388px;
+  }
+
+  .WhatWeDoCard{
+    font-size: 12px;
+    padding: 10px 11px;
+    padding-left: 30px;
+  }
+
+  .leftPoiter {
+    font-size: 12px;
+    padding: 10px 11px;
+    padding-right: 30px;
   }
 
 }
@@ -103,6 +136,9 @@ color: var(--secondary-color);
 .footer .container>.row{
   row-gap: 30px;
 }
+.keyServiceSections>.row{
+  row-gap: 24px;
+}
 
 .strategicCard{
   min-height: unset;
@@ -112,6 +148,51 @@ color: var(--secondary-color);
   font-size: 11px;
 }
 
+
+.PointCardWraper {
+  align-items: center;
+  width: 92%;
+}
+.PcardWrapper3 {
+  width: 100%;
+}
+  .WhatWeDoCard{
+    font-size: 9px;
+  }
+  .PointIcon{
+    width: 52px;
+  }
+  
+  .PointIcon div img{
+    width: 24px;
+  }
+  
+  .leftPoiter {
+    font-size: 9px;
+  }
+
+  .PcardWrapper3 .WhatWeDoCard.leftPoiter{
+    left: 10px;
+  }
+  
+  .PcardWrapper3  .WhatWeDoCard.rightPoiter{
+    right: -24px;
+  }
+  
+  .PcardWrapper4  .WhatWeDoCard.rightPoiter{
+    right: 50px;
+  }
+
+  .LogoCenter{
+    width: 120px;
+    padding: 6px;
+  }
+  
+  .centerLogoImg{
+    border: 2px solid #000000;
+    padding: 12px;
+  }
+  
 
 }
 
@@ -134,6 +215,9 @@ color: var(--secondary-color);
     line-height: 40px;
   }
 
+  .defaultPadding{
+    padding: 50px 0;
+  }
   .footer.defaultPadding{
     padding: 34px 0;
   }
@@ -192,6 +276,10 @@ color: var(--secondary-color);
   } */
   .nav-pills .nav-link {
     clip-path: none;
+}
+
+.MobilePoints .WhatWeDoCard {
+  font-size: 13px;
 }
 }
 

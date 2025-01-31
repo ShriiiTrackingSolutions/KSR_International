@@ -286,6 +286,7 @@ color: var(--primary-color);
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: var(--lightBgCream);
+  color: var(--background-color);
 }
 .dropdown-menu {
   padding: 0;
@@ -783,6 +784,10 @@ background-color: var(--brandHover);
   background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/WhatWeDoBanner.webp') no-repeat center ;
   background-size: cover;
 }
+.NewBanner.IndustrialTrainingPage0{
+  background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/IndustrialTrainingBanner.webp') no-repeat center ;
+  background-size: cover;
+}
 
 /* vision value and mission section start */
 
@@ -937,6 +942,63 @@ padding-left: 20px;
 .PoitsLayout{
   position: relative;
 }
+.PoitsLayout::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100% - 67px);
+  width: 40px;
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  background-color: #ffffff;
+  border-color: var(--background-color);
+  z-index: -2;
+}
+.PoitsLayout::before{
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60%;
+  width: 2px;
+  background-color: var(--background-color);
+  z-index: -1;
+}
+
+.lineIllustrator1{
+  position: absolute;
+  width: 18%;
+  height: 2px;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  z-index: -2;
+}
+.lineIllustrator2{
+  position: absolute;
+  width: 28%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);;
+  background-color: var(--background-color);
+  z-index: -2;
+}
+.lineIllustrator3{
+  position: absolute;
+  width: 18%;
+  height: 2px;
+  bottom: 34.2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  z-index: -2;
+}
+
 
 .LogoCenter{
   position: absolute;
@@ -980,6 +1042,7 @@ padding-left: 20px;
 
 .WhatWeDoCard{
   position: relative;
+  font-size: 18px;
   padding: 18px 24px ;
   text-transform: capitalize;
   padding-left: 44px;
@@ -1008,6 +1071,9 @@ padding-left: 20px;
   border-radius: 50%;
   background-color: #ffffff;
 }
+.PointIcon div img{
+  width: 30px;
+}
 
 .leftPoiter {
   padding: 18px 24px ;
@@ -1029,3 +1095,102 @@ padding-left: 20px;
   background-color: #000000;
   color: #ffffff;
 }
+
+.PcardWrapper3 .WhatWeDoCard.leftPoiter{
+  left: 45px;
+}
+
+.PcardWrapper3  .WhatWeDoCard.rightPoiter{
+  right: -24px;
+}
+
+.PcardWrapper4  .WhatWeDoCard.rightPoiter{
+  right: 100px;
+}
+
+.MobilePoints .LogoCenter{
+  position: static;
+  transform: none;
+  margin: auto;
+}
+
+.MobilePoints .WhatWeDoCard {
+  width: 90%;
+  margin-left: auto;
+}
+
+
+/* Key Services & Strengths section start */
+
+.KeyServicesAndStrengths{
+background:linear-gradient(to right, #081118f1,#081118f1), url('../image/KeyStrenths.webp') no-repeat center;
+background-size: cover;
+color: #ffffff;
+}
+.KeyServicesAndStrengths .secH{
+  color: var(--darkGrey);
+}
+
+.KeyServicesAndStrengths .secH strong{
+  color: #ffffff;
+}
+
+.KeyServicesAndStrengths .fifthH{
+  color: var(--fade);
+}
+.KeyServicesAndStrengths p{
+  color: var(--grey);
+  margin-bottom: 0;
+}
+
+
+.keyServiceCard {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient( 160deg, #ffffff07, #f3f3f30e, #cecece18);
+  background-clip: padding-box;
+  border-radius: 30px;
+  padding: 24px;
+  text-align: center;
+  height: 100%;
+}
+
+
+/* Key Services & Strengths section end */
+
+
+/*----------------------------
+   Industrial Training Page
+-----------------------------*/
+
+/* TECHNICAL & SAFETY TRAINING FOR INDUSTRY section  start */
+.technicalAndSaftyTraining .navTabWrap{
+  position: relative;
+}
+
+.technicalAndSaftyTraining .nav-pills{
+flex-direction: column;
+row-gap: 16px;
+position: sticky !important;
+top: 76px;
+}
+.technicalAndSaftyTraining .nav-link{
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--background-color);
+  transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+  border-radius: 0;
+}
+.technicalAndSaftyTraining .nav-link:hover{
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.technicalAndSaftyTraining .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #ffffff;
+  background-color: var(--secondary-color);
+}
+
+/* TECHNICAL & SAFETY TRAINING FOR INDUSTRY section end */
