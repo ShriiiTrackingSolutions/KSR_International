@@ -788,6 +788,10 @@ background-color: var(--brandHover);
   background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/IndustrialTrainingBanner.webp') no-repeat center ;
   background-size: cover;
 }
+.NewBanner.leadingTeamPage0{
+  background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/LeadingTeamBack.webp') no-repeat center ;
+  background-size: cover;
+}
 
 /* vision value and mission section start */
 
@@ -1178,6 +1182,7 @@ top: 76px;
   padding: 14px 20px;
   text-align: left;
   font-weight: 600;
+  letter-spacing: 1px;
   background-color: transparent;
   color: var(--background-color);
   transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
@@ -1193,4 +1198,131 @@ top: 76px;
   background-color: var(--secondary-color);
 }
 
+
+.technicalAndSaftyTraining  .tab-content ul{
+  list-style: none;
+  padding-left: 20px;
+  }
+  
+  .technicalAndSaftyTraining  .tab-content ul li{
+    position: relative;
+    font-size: 20px;
+    padding-left: 28px;
+  }
+  
+  .technicalAndSaftyTraining  .tab-content ul li svg{
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
 /* TECHNICAL & SAFETY TRAINING FOR INDUSTRY section end */
+
+.specEngRow{
+  row-gap: 24px;
+}
+
+.specialEngineeringCard{
+  text-align: center;
+}
+
+.EngineeringSoftware{
+  background: linear-gradient(45deg,#000000d3 5%,#00000000 100%) no-repeat center,url('../image/sofwExprBack.webp') no-repeat center;
+  background-size: cover,cover;
+}
+
+.EngineeringSoftware .secH{
+  color: #ffffff;
+}
+
+.EngineeringSoftware .secH strong{
+  color: var(--fade);
+}
+
+
+
+
+.generalComparisonsTable table {
+  border-collapse: collapse;
+  min-width: 1150px;
+  color: #000000;
+  position: relative;
+  width: 100%;
+}
+.generalComparisonsTable .tableWrapper {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 200px); /* Limit table height */
+  min-height: 344px ; /* Minimum height */
+  border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
+}
+
+.generalComparisonsTable th, 
+.generalComparisonsTable td {
+  text-align: left;
+  vertical-align: text-top;
+  padding: 8px;
+}
+
+.generalComparisonsTable th {
+  color: #ffffff;
+  background-color: var(--secondary-color);
+}
+
+.generalComparisonsTable th:first-of-type {
+  position: sticky;
+  left: 0;
+  background-color: var(--secondary-color); /* Ensures left column stays consistent */
+  z-index: 2; /* Makes the first column appear above other content */
+}
+
+.generalComparisonsTable .fst_Table th {
+  position: sticky;
+  top: 0;
+  background-color: var(--brandHover);
+  z-index: 3; /* Ensures the header row appears above everything else */
+}
+
+.generalComparisonsTable .fst_Table .fst_TH {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--brandHover); /* Ensures the top-left corner stays consistent */
+  z-index: 4; /* Highest z-index to prevent conflicts */
+}
+
+.generalComparisonsTable tr:nth-child(even) {
+  background-color: #eee8d0;
+}
+
+/* All Types of Tensile Fabric table section end */
+
+
+.generalComparisonsTable.ProductDiscriptionPage0  th:first-of-type{
+  min-width: 100px;
+}
+
+.generalComparisonsTable .tableWrapper.smallTable  {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: unset; /* Limit table height */
+  min-height: unset; /* Minimum height */
+  border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
+}
+
+
+
+/*-----------------------
+  LEADERSHIP TEAM Page
+------------------------*/
+
+
+.TeamMemberImg{
+width: 22%;
+border-radius: 50%;
+border: 4px solid var(--secondary-color);
+min-width: 100px;
+}
+
+.TeamMemberImg img{
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}

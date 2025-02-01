@@ -281,7 +281,57 @@ color: var(--secondary-color);
 .MobilePoints .WhatWeDoCard {
   font-size: 13px;
 }
+.technicalAndSaftyTraining .nav-link {
+  padding: 8px 20px;
 }
+.technicalAndSaftyTraining .nav-pills {
+  row-gap: 4px;
+}
+.specEngRow .fifthH{
+font-size: 14px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .generalComparisonsTable table {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .generalComparisonsTable th:first-of-type {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    z-index: 2;
+  }
+
+  .generalComparisonsTable.ProductDiscriptionPage0 th:first-of-type {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  table.ResponsiveTable thead {
+    display: none;
+  }
+
+  table.ResponsiveTable tbody td {
+    display: block;
+  }
+
+  table.ResponsiveTable tbody tr td:first-child {
+    background: #666;
+    color: #fff;
+  }
+
+  table.ResponsiveTable tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: block;
+  }
+
+}
+
 
 
 
