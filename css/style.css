@@ -23,7 +23,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  line-height: 29.6px;
   font-style: normal;
 }
 
@@ -35,8 +34,10 @@ img {
   width: 100%;
 }
 
+
 p{
   color: #5b5e61;
+  line-height: 24.6px;
 }
 
 
@@ -792,6 +793,10 @@ background-color: var(--brandHover);
   background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/LeadingTeamBack.webp') no-repeat center ;
   background-size: cover;
 }
+.NewBanner.organizationChartPage0{
+  background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/ChartBanner.webp') no-repeat center ;
+  background-size: cover;
+}
 
 /* vision value and mission section start */
 
@@ -1312,17 +1317,197 @@ top: 76px;
 /*-----------------------
   LEADERSHIP TEAM Page
 ------------------------*/
-
+.teamMembers .container >.row{
+row-gap: 24px;
+}
+.leadingTeamCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
+}
+.teamInfo{
+  flex: 1 0 0%;
+  align-self: center;
+}
 
 .TeamMemberImg{
-width: 22%;
-border-radius: 50%;
-border: 4px solid var(--secondary-color);
-min-width: 100px;
+  width: 22%;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  min-width: 100px;
+  aspect-ratio: 1;
+  }
+  
+  .TeamMemberImg img{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .education{
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+.memberPosition{
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.TeamMemberImg img{
-  aspect-ratio: 1;
-  border-radius: 50%;
-  object-fit: cover;
+/* organization chart page start */
+
+.organizationChart .container{
+  width: 100%;
+  max-width: 1320px;
 }
+
+.avatarMember{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid var(--secondary-color);
+  outline-offset: 2px;
+  margin: 4px;
+  border: 5px solid var(--secondary-color);
+}
+.avatarMember img{
+  width: 28px;
+}
+.OrgRoots .avatarMemberInfo  span{
+font-size: 14px;
+}
+
+.mainRoot{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainRoot .avatarMember{
+  margin-bottom: 10px;
+}
+
+.avatarMemberInfo h6{
+  font-weight: 600;
+}
+
+.mainRoot {
+  position: relative;
+}
+
+.mainRoot::after{
+  content: "";
+  width: 2px;
+  background-color: var(--darkGrey);
+  height: 31px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+}
+
+.secondRoot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.RootCard,.thirdRoot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.secondRoot .avatarMemberInfo{
+  flex: 0 0 auto;
+}
+
+.secondRoot .RootCard{
+  transform: translateX(-100% );
+  position: relative;
+}
+.secondRoot .RootCard::after{
+  content: "";
+  position: absolute;
+  width: calc(50% - 29px);
+  height: 2px;
+  left: calc(100% + 30px);
+  background-color: var(--darkGrey);
+}
+.OrgRoots{
+  margin-bottom: 30px;
+}
+.secondRoot .RootCard::before{
+  content: "";
+  top: 0;
+  position: absolute;
+  width: 2px;
+  height:  calc(100% + 30px);
+  left: calc(150% + 0.46px);
+  background-color: var(--darkGrey);
+}
+.thirdRoot {
+  gap: 14px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.thirdRoot .RootCard{
+  gap: 4px;
+  position: relative;
+}
+.thirdRoot .RootCard::before{
+  content: "";
+  bottom: 100%;
+  position: absolute;
+  width: 2px;
+  height:  31px;
+  left: calc(50% - 1px);
+  background-color: var(--darkGrey); 
+}
+.thirdRoot .RootCard::after{
+  content: "";
+  bottom: calc(100% + 30px);
+  position: absolute;
+  width: calc(100% + 30px);
+  height:  2px;
+  left: calc(50% - 1px);
+  background-color: var(--darkGrey); 
+}
+.thirdRoot .RootCard:last-child:after{
+  display: none;
+}
+.thirdRoot .RootCard:nth-last-child(2):after{
+  width:  calc(100% + 3px);;
+}
+.thirdRoot .avatarMember{
+  flex: 0 0 auto;
+}
+
+.thirdRoot .avatarMember{
+  width: 34px;
+  height: 34px;
+  margin: 3px;
+  border: 2px solid var(--secondary-color);
+}
+.thirdRoot  .avatarMember img{
+  width: 18px;
+}
+.thirdRoot h6{
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.thirdRoot .avatarMemberInfo span{
+  font-size: 9px;
+}
+
+
+/* organization chart page end */
