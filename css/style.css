@@ -1358,6 +1358,10 @@ row-gap: 24px;
   margin-bottom: 4px;
 }
 
+/*--------------------------
+  organization chart Page
+--------------------------*/
+
 /* organization chart page start */
 
 .organizationChart .container{
@@ -1511,3 +1515,20 @@ font-size: 14px;
 
 
 /* organization chart page end */
+
+
+/*-----------------
+  Manpower Page
+------------------*/
+
+/* bar and chart section start */
+
+
+
+.therdH strong{
+  color: var(--secondary-color);
+}
+
+/* bar and chart section end */
+
+

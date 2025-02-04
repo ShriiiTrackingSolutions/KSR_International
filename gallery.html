@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="image/KSR_Fevicone.png" />
-    <title>Organization Chart | KSR International Consultants & Engineers</title>
+    <title>Gallery | KSR International Consultants & Engineers</title>
 
     <link fetchpriority="high" rel="preload"  href="image/ChartBanner.webp" as="image" type="image/png" />
 
@@ -22,12 +22,12 @@
 
     <link rel="preload" as="style" href="css/responsive.css" />
   
+    <link rel="stylesheet" href="css/spotlight.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
     <link rel="preconnect" href="https://kit.fontawesome.com" />
     <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
-
     <script
       src="https://kit.fontawesome.com/52ca9e0df4.js"
       crossorigin="anonymous"
@@ -97,118 +97,24 @@
     <!-- header start -->
 
     <!-- banner start -->
-    <section id="headBelowContent" class="NewBanner organizationChartPage0 ">
+    <section id="headBelowContent" class="NewBanner galleryPage0 ">
         <div class="container">
-          <h1 class="display-1">Organization Chart</h1>
+          <h1 class="display-1">Gallery</h1>
         </div>
-      </section>
+    </section>
     <!-- banner start End-->
-
-
-    <!-- organization chart page start  -->
-<section class="organizationChart defaultPadding">
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="OrgRoots mainRoot">
-             <div class="avatarMember">
-               <img src="image/MainMember.png" alt="Krishna Kumar Rao">
-             </div>
-             <div class="avatarMemberInfo">
-              <h6>Mr. Krishna Kumar Rao</h6>
-              <span>Founding & Managing Director</span>
-             </div>
-      </div>
+    
+<section id="gallery" class="gallery defaultPadding">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="spotlight" href="https://shriiitrackingsolutions.github.io/GajeraPhotography/image/Gallery/Engagement/IMG_3826.jpg">
+        <img src="https://shriiitrackingsolutions.github.io/GajeraPhotography/image/Gallery/Engagement/IMG_3826.jpg" alt="Engagement pic" />
+      </a>
     </div>
-    <div class="col-12">
-      <div class="OrgRoots secondRoot">
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/MainMember.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>Awadesh Sharma</h6>
-           <span>Head Business Development</span>
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="OrgRoots thirdRoot">
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>Sachin Pariyar</h6>
-           <span>Head Process</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>Sunny Gupta</h6>
-           <span>Head Piping</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>Dhanya Kumar</h6>
-           <span>Head C&S</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>KS Srinivasan</h6>
-           <span>Head Instrument & Control</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>Parag Joshi</h6>
-           <span>Head Electrical</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>VK Srivastava</h6>
-           <span>Project Control</span>
-          </div>
-        </div>  
-        <div class="RootCard">
-          <div class="avatarMember">
-            <img src="image/Member.png" alt="Krishna Kumar Rao">
-          </div>
-          <div class="avatarMemberInfo">
-           <h6>RN Singh</h6>
-           <span>MEP</span>
-          </div>
-        </div>  
-      </div>
-    </div>
+   </div>
   </div>
-  <p class="mt-5 fifthH text-center">Supporting team of designer, Process control, modeler & construction</p>
-</div>
 </section>
-    <!-- organization chart page end -->
-
-
-
-
 
 
     <!-- whatsapp FAB icon -->
@@ -283,7 +189,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script async src="js/dynamic.js"></script>
+    <script src="js/dynamic.js"></script>
+    <script src="js/spotlight.bundle.js"></script>
 
     <script>
       // Header Script
@@ -350,6 +257,57 @@
         debouncedHandleScroll();
       });
     </script>
+
+<script>
+  Spotlight.show(myGallery, {
+    // "fade", "slide", "scale", and "rotate"
+    animation: "slide",
+    /* shows/hides controls
+"theme",
+"fullscreen",
+"autofit",
+"zoom-in",
+"zoom-out",
+"page",
+"title",
+"description",
+"player"
+*/
+    control: [
+      "autofit",
+      "zoom",
+      "player",
+      "fullscreen",
+      "zoom-in",
+      "zoom-out",
+    ],
+    // auto hides the controls
+    autohide: true,
+    // shows fullscreen toggle button
+    fullscreen: true,
+    // shows zoom buttons
+    zoom: true,
+    // shows zoomIn button
+    zoomin: true,
+    // shows zoomOut button
+    zoomout: true,
+    // shows reset button
+    reset: true,
+    // shows autoplay button
+    player: true,
+    // infinite mode
+    infinite: true,
+    // "white" or "dark"
+    theme: "dark",
+    // shows pages
+    page: true,
+    // shows image preloader
+    preloader: true,
+    // enables image prefetching
+    prefetch: true,
+  });
+</script>
+
 
 
     <script defer src="js/script.js"></script>

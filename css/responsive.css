@@ -294,6 +294,10 @@ color: var(--secondary-color);
 .thirdRoot .RootCard:last-child:before{
   bottom: calc(50% - 2px);
 }
+
+.rowReverse{
+  flex-direction: column-reverse;
+}
   
 
 }
