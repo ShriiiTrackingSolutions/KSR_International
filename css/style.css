@@ -797,6 +797,14 @@ background-color: var(--brandHover);
   background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/ChartBanner.webp') no-repeat center ;
   background-size: cover;
 }
+.NewBanner.galleryPage0{
+  background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/GalleryBanner.webp') no-repeat center ;
+  background-size: cover;
+}
+.NewBanner.contactPage0{
+  background: linear-gradient(to right, #152d3de7,#152d3de7), url('../image/contactBanner.webp') no-repeat center ;
+  background-size: cover;
+}
 
 /* vision value and mission section start */
 
@@ -1523,12 +1531,146 @@ font-size: 14px;
 
 /* bar and chart section start */
 
-
-
 .therdH strong{
   color: var(--secondary-color);
 }
 
 /* bar and chart section end */
 
+/*-----------------
+  Gallery Page
+------------------*/
+.gallery .container>.row{
+  row-gap: 24px;
+}
+.spotlight{
+  display: inline-block;
+  aspect-ratio: 5/3.5;
+}
 
+.spotlight img{
+  aspect-ratio: 5/3.5;
+  object-fit: cover;
+}
+
+
+/*-----------------
+  Contact Page
+------------------*/
+
+
+/* form section start */
+
+.formPart {
+  padding: 60px;
+  background-color: var(--lightBgGreen);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.ContactForm input:not(.form-check-input),
+.ContactForm textarea {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 0 0 4px 0;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #0000001a;
+  background-color: #02010100;
+  margin-bottom: 24px;
+}
+.ContactForm .form-control:focus {
+  background-color: #02010100;
+  border-color: #0000001a;
+  outline: 0;
+  box-shadow: none;
+}
+.ContactForm .form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  box-shadow: none;
+}
+.ContactForm textarea {
+  resize: none;
+}
+.ContactForm textarea:focus-visible {
+  outline: none;
+}
+.ContactForm button {
+  border: none;
+}
+
+.ContactForm .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  padding: 0 0 20px 0;
+}
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+.formSection.defaultPadding{
+  padding-bottom: 120px;
+}
+
+.formSection .modal-header {
+  justify-content: center;
+  position: relative;
+}
+.formSection .modal-header .btn-close {
+ margin: 0 !important;
+ position: absolute;
+ right: 14px;
+ top: 14px;
+}
+
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.option {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.option img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.contactInfo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  justify-content: space-between;
+}
+
+.contactCard{
+  position: relative;
+  padding: 0 12px ;
+  display: flex;
+}
+.anchorAbs{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.contactText{
+  flex-shrink: 1;
+}
+.contactIco{
+  margin-right: 8px;
+}
+
+/* form section end */
+
+
+.mapSection iframe{
+  height: 500px;
+}
