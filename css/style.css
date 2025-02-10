@@ -666,7 +666,7 @@ background-color: var(--brandHover);
 .locationLink i {
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 2px;
 }
 .footer .social-icons {
   display: flex;
@@ -701,6 +701,27 @@ background-color: var(--brandHover);
 }
 .footer .social-icons .whatsapp {
   background-color: #25d366;
+}
+
+.f-bottom {
+  background: var(--background-color);
+  padding: 12px 0;
+  color: #fff;
+}
+
+.f-bottom .row {
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px
+}
+
+.copyright b {
+  color: #ffc983;
+  transition: .3s ease-in-out
+}
+
+.copyright b:hover {
+  color: var(--fade)
 }
 
 /* footer section End */
