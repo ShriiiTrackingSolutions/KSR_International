@@ -566,10 +566,10 @@ span.display-3 {
   display: inline-block;
   min-width: 241px;
 }
-.TeamMemberImg,
-.generalComparisonsTable.ProductDiscriptionPage0 th:first-of-type {
+.TeamMemberImg {
   min-width: 100px;
 }
+
 .footer .contact-info i {
   color: var(--primary-color);
   font-size: 20px;
@@ -697,6 +697,14 @@ span.display-3 {
   background: linear-gradient(to right, #152d3de7, #152d3de7) 0 0 / cover,
     url("../image/contactBanner.webp") center/cover no-repeat;
 }
+.NewBanner.oilAndGasProjectPage0 {
+  background: linear-gradient(to right, #152d3de7, #152d3de7) 0 0 / cover,
+    url("../image/OilAndGasProject.webp") center/cover no-repeat;
+}
+.NewBanner.buildingProjectPage0 {
+  background: linear-gradient(to right, #152d3de7, #152d3de7) 0 0 / cover,
+    url("../image/BuildingProjectBanner.webp") center/cover no-repeat;
+}
 .serviceSection .nav-pills {
   flex-direction: column;
 }
@@ -797,8 +805,14 @@ span.display-3 {
 .technicalAndSaftyTraining .tab-content ul li svg {
   position: absolute;
   left: 0;
+  top: 4px;
+}
+
+.technicalAndSaftyTraining .tab-content ul li svg{
   top: 6px;
 }
+
+
 .whatWeDo {
   background-color: var(--lightBgCream);
 }
@@ -1006,10 +1020,13 @@ span.display-3 {
 }
 .generalComparisonsTable table {
   border-collapse: collapse;
-  min-width: 1150px;
+  min-width: 880PX;
   color: #000;
   position: relative;
   width: 100%;
+}
+.generalComparisonsTable.buildingProjectPage0 table {
+  min-width: 694px;
 }
 .generalComparisonsTable .tableWrapper {
   overflow-y: auto;
@@ -1057,6 +1074,17 @@ span.display-3 {
   min-height: unset;
   border: 1px solid #ddd;
 }
+.mainPerson {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.mainPerson .leadingTeamCard{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .leadingTeamCard {
   display: flex;
   flex-wrap: wrap;
@@ -1070,6 +1098,9 @@ span.display-3 {
 .TeamMemberImg {
   width: 22%;
   border: 4px solid var(--primary-color);
+}
+.teamMembers .col-12{
+margin-bottom: 20px;
 }
 .TeamMemberImg img {
   aspect-ratio: 1;
@@ -1302,3 +1333,5 @@ span.display-3 {
 .mapSection iframe {
   height: 500px;
 }
+
+

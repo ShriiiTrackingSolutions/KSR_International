@@ -312,6 +312,12 @@
     flex-direction: column;
     align-items: center;
   }
+  .mainPerson .TeamMemberImg {
+    width: 44%;
+}
+.TeamMemberImg {
+  width: 30%;
+}
 }
 @media screen and (max-width: 600px) {
   .generalComparisonsTable table {
@@ -325,10 +331,13 @@
     max-width: 100%;
     z-index: 2;
   }
-  .generalComparisonsTable.ProductDiscriptionPage0 th:first-of-type {
+  .generalComparisonsTable.ProductDiscriptionPage0 th:first-of-type,.generalComparisonsTable.buildingProjectPage0 th:first-of-type  {
     width: 100%;
     max-width: 100%;
   }
+
+
+
   table.ResponsiveTable thead {
     display: none;
   }
