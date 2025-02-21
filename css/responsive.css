@@ -263,9 +263,9 @@
     justify-content: center;
     row-gap: 40px;
   }
-  .footer .social-icons {
+  /* .footer .social-icons {
     justify-content: center;
-  }
+  } */
   .footer .exploreLinks ul li,
   .footer .exploreLinks1 ul li {
     text-align: left;
@@ -286,8 +286,8 @@
     margin: auto;
   }
   .footer .exploreLinks ul {
-    width: 143px;
-    max-width: 143px !important;
+    width: 154px;
+    max-width: 154px !important;
     margin: auto;
   }
   .BannerWithText {
@@ -375,6 +375,11 @@
   }
   .footer .fourthH {
     margin-bottom: 20px;
+  }
+  .footer .social-icons {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 48px;
   }
 }
 @media only screen and (max-height: 539.98px) {

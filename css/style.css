@@ -512,9 +512,10 @@ span.display-3 {
   background: 0 0 / cover #2b3283;
 }
 .footer .footer-brand {
-  display: inline-block;
+  display: table;
   width: 60%;
   min-width: 150px;
+  margin: auto;
   margin-bottom: 16px;
 }
 .footer .fourthH {
@@ -527,6 +528,12 @@ span.display-3 {
 .exploreLinks a i {
   margin-right: 8px;
   font-size: 15px;
+}
+
+.exploreLinks1 a i {
+  margin-right: 8px;
+  font-size: 15px;
+  color: var(--primary-color);
 }
 .contact-info,
 .footer .exploreLinks ul li {
@@ -543,6 +550,12 @@ span.display-3 {
 .footer .exploreLinks ul {
   width: 154px;
   max-width: 154px !important;
+  margin: auto;
+}
+.footer .exploreLinks1 ul {
+  width: 314px;
+  max-width: 314px !important;
+  text-align: left;
   margin: auto;
 }
 .footer ul {
@@ -585,7 +598,7 @@ span.display-3 {
 .footer .social-icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 44px;
   gap: 10px;
   margin-top: 20px;
 }
