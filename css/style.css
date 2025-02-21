@@ -2,9 +2,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.headerCards h4,
-.secH strong,
-.therdH strong {
+.headerCards h4 {
   color: var(--secondary-color);
 }
 #main-header,
@@ -101,7 +99,9 @@ span.display-3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   line-height: 52px;
+  font-weight: 600;
   margin-bottom: 30px;
+  color: var(--secondary-color);
 }
 .therdH {
   font-size: 28px;
@@ -132,7 +132,7 @@ span.display-3 {
 .headerCards {
   font-size: 14px;
 }
-.EngineeringSoftware .secH strong,
+
 .KeyServicesAndStrengths .fifthH,
 .Partners .fifthH,
 .copyright b:hover,
@@ -401,6 +401,7 @@ span.display-3 {
 #ca1.owl-carousel .item3 {
   background: linear-gradient(#000000b9, #000000b9) 0 0 / cover,
     url("../image/BannerImg3.webp") center/cover no-repeat;
+    background-size: cover;
 }
 #ca1.owl-carousel .item2 .bannerCard,
 .bannerCard {
@@ -1043,20 +1044,20 @@ span.display-3 {
 .generalComparisonsTable th:first-of-type {
   position: sticky;
   left: 0;
-  background-color: var(--secondary-color);
+  background-color: var(--accentColour);
   z-index: 2;
 }
 .generalComparisonsTable .fst_Table th {
   position: sticky;
   top: 0;
-  background-color: var(--brandHover);
+  background-color: var(--accentColour);
   z-index: 3;
 }
 .generalComparisonsTable .fst_Table .fst_TH {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: var(--brandHover);
+  background-color: var(--accentColour);
   z-index: 4;
 }
 .mainRoot::after,
@@ -1106,6 +1107,9 @@ margin-bottom: 20px;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+}
+.teamMembers .display-1{
+  color: var(--secondary-color);
 }
 .education {
   font-size: 14px;
@@ -1242,6 +1246,9 @@ margin-bottom: 20px;
 .spotlight img {
   aspect-ratio: 5/3.5;
   object-fit: cover;
+}
+.spotLightFooterRemove #spotlight  .spl-footer{
+display: none;
 }
 .formPart {
   padding: 60px;
