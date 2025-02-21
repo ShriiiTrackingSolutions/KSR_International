@@ -15,7 +15,6 @@ body {
   position: relative;
 }
 .Banner .owl-dots,
-.footer .emailSec,
 .footer .exploreLinks,
 .footer .exploreLinks1,
 .specialEngineeringCard {
@@ -538,13 +537,12 @@ span.display-3 {
 .strategicCard {
   text-align: center;
 }
-.footer ul:not(.footer .exploreLinks1 ul) {
-  max-width: 304px;
+.footer ul {
   margin: auto;
 }
 .footer .exploreLinks ul {
-  width: 143px;
-  max-width: 143px !important;
+  width: 154px;
+  max-width: 154px !important;
   margin: auto;
 }
 .footer ul {
@@ -560,9 +558,7 @@ span.display-3 {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
-.emailSec {
-  min-width: 310px;
-}
+
 .emailAnchor {
   display: inline-block;
   min-width: 241px;
@@ -733,12 +729,13 @@ span.display-3 {
 }
 .newBTN .c-main {
   color: #fff;
-  padding: 4px;
+  padding: 10px 4px;
   box-shadow: inset 0 0 5px rgba(17, 17, 17, 0);
   border: 1px solid transparent;
   border-radius: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -812,6 +809,7 @@ span.display-3 {
 .technicalAndSaftyTraining .tab-content ul li svg{
   top: 6px;
 }
+
 
 
 .whatWeDo {
