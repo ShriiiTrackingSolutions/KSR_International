@@ -715,6 +715,22 @@ span.display-3 {
   background: linear-gradient(to right, #152d3de7, #152d3de7) 0 0 / cover,
     url("../image/BuildingProjectBanner.webp") center/cover no-repeat;
 }
+.NewBanner.managementPerceptionPage0 {
+  background: linear-gradient(to right, #152d3dcb, #152d3dcb) 0 0 / cover,
+    url("../image/ManagementPerception.webp") center/cover no-repeat;
+}
+.NewBanner.fitnessForServicePage0 {
+  background: linear-gradient(to right, #152d3dcb, #152d3dcb) 0 0 / cover,
+    url("../image/fitnessForService.webp") center/cover no-repeat;
+}
+.NewBanner.landmarkProjectPage0 {
+  background: linear-gradient(to right, #152d3dcb, #152d3dcb) 0 0 / cover,
+    url("../image/LandmarkProject.webp") center/cover no-repeat;
+}
+.NewBanner.qualityPolicyPage0 {
+  background: linear-gradient(to right, #152d3dcb, #152d3dcb) 0 0 / cover,
+    url("../image/PolicyBanner.webp") center/cover no-repeat;
+}
 .serviceSection .nav-pills {
   flex-direction: column;
 }
@@ -1014,7 +1030,7 @@ span.display-3 {
   background-color: var(--primary-color);
   color: #fff;
 }
-.generalComparisonsTable th,
+
 .nav-pills .show > .nav-link,
 .technicalAndSaftyTraining .nav-pills .nav-link.active {
   color: #fff;
@@ -1030,62 +1046,7 @@ span.display-3 {
       no-repeat,
     url("../image/sofwExprBack.webp") center/cover no-repeat;
 }
-.generalComparisonsTable table {
-  border-collapse: collapse;
-  min-width: 880PX;
-  color: #000;
-  position: relative;
-  width: 100%;
-}
-.generalComparisonsTable.buildingProjectPage0 table {
-  min-width: 694px;
-}
-.generalComparisonsTable .tableWrapper {
-  overflow-y: auto;
-  max-height: calc(100vh - 200px);
-  min-height: 344px;
-  border: 1px solid #ddd;
-}
-.generalComparisonsTable td,
-.generalComparisonsTable th {
-  text-align: left;
-  vertical-align: text-top;
-  padding: 8px;
-}
-.generalComparisonsTable th:first-of-type {
-  position: sticky;
-  left: 0;
-  background-color: var(--accentColour);
-  z-index: 2;
-}
-.generalComparisonsTable .fst_Table th {
-  position: sticky;
-  top: 0;
-  background-color: var(--accentColour);
-  z-index: 3;
-}
-.generalComparisonsTable .fst_Table .fst_TH {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: var(--accentColour);
-  z-index: 4;
-}
-.mainRoot::after,
-.secondRoot .RootCard::after {
-  background-color: var(--darkGrey);
-  content: "";
-  position: absolute;
-}
-.generalComparisonsTable tr:nth-child(2n) {
-  background-color: #eee8d0;
-}
-.generalComparisonsTable .tableWrapper.smallTable {
-  overflow-y: auto;
-  max-height: unset;
-  min-height: unset;
-  border: 1px solid #ddd;
-}
+
 .mainPerson {
   margin-left: auto;
   margin-right: auto;
@@ -1353,3 +1314,161 @@ display: none;
 }
 
 
+
+
+/* perception section start */
+.perception .container{
+  padding: 0 120px;
+}
+.perception{
+  background: url('../image/PerceptionImg1.webp') no-repeat top left,url('../image/PerceptionImg2.webp') no-repeat bottom right, #d2d2d2;
+  background-size:  14%,19%,cover;
+}
+/* perception section end */
+
+/* fitness Section start */
+.fitnessSection ul{
+  list-style: none;
+  padding-left: 20px;
+  margin: 0%;
+}
+.fitnessSection ul li {
+  margin-top: 16px;
+  position: relative;
+  font-size: 20px;
+  padding-left: 34px;
+}
+
+.fitnessSection ul li svg{
+  margin-right: 8px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+
+/* fitness Section end */
+
+/* oil and gas project css start  */
+.OilGasProject ol{
+  list-style: none;
+  margin: 0;
+}
+.OilGasProject ol li .listIcon{
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.OilGasProject  ol{
+  list-style: none;
+  padding-left: 20px;
+  margin: 0%;
+}
+.OilGasProject  ol li {
+  margin-top: 16px;
+  position: relative;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.buildingProjectList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buildingProjectList .liPartition{
+  width: 49%;
+}
+
+/* oil and gas project css end */
+
+
+/* quality Policy Page css start  */
+
+.qualityPolicyData .display-1{
+text-align: center;
+}
+.qualityPolicyData .container > .row{
+  align-items: center;
+}
+.pdfFileView{
+  max-width: 800px;
+  /* padding: 2%;
+  aspect-ratio: 1/1.414; */
+  margin: auto;
+  margin-top: 30px;
+  border: 2px solid var(--secondary-color);
+}
+
+/* .LogoKSR{
+  width: 22%;
+} */
+/* quality Policy Page css end */
+
+.qualityCertificate{
+  width: 30%;
+  min-width: 250px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.overseasContact .tab-content .row{
+  justify-content: space-between;
+}
+
+
+
+.pho_em_Links{
+  display: flex;
+  gap: 8px;
+}
+
+.pho_em_Links a{
+  color: var(--background-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+.pho_em_Links a:hover{
+ opacity: 1;
+}
+.MultiAddUl{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+.MultiAddUl address{
+  margin-bottom: 0;
+  max-width: 350px;
+}
+.MultiAddUl li{
+  margin-top: 6px;
+}
+
+.overseasContact  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+.overseasContact .nav-link {
+  color: var(--accentColour);
+  font-weight: 600;
+  border-radius: 0;
+}
+
+
+.overseasContact .nav-pills{
+  border-bottom:  4px solid var(--secondary-color);
+}

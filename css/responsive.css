@@ -27,6 +27,10 @@
     font-size: 16px;
     padding: 10px 30px 10px 11px;
   }
+
+  .perception{
+    background-size:  15%,23%,cover;
+  }
 }
 @media (max-width: 1199.98px) {
   .display-3 {
@@ -54,6 +58,9 @@
   .leftPoiter {
     font-size: 12px;
     padding: 10px 30px 10px 11px;
+  }
+  .perception{
+    background-size:  17%,25%,cover;
   }
 }
 @media (max-width: 991.98px) {
@@ -104,12 +111,16 @@
   .Banner {
     height: calc(100vh - 91px);
   }
-  .footer .container > .row {
+  .footer .container > .row,.fitnessSection .container > .row {
     row-gap: 30px;
+  }
+  .fitnessSection .container > .row {
+    flex-direction: column-reverse;
   }
   .keyServiceSections > .row {
     row-gap: 24px;
   }
+
   .strategicCard {
     min-height: unset;
   }
@@ -230,6 +241,18 @@
   .rowReverse {
     flex-direction: column-reverse;
   }
+  .perception{
+    background-size:  23%,30%,cover;
+  }
+  .buildingProjectList{
+    justify-content: start;
+  }
+  .buildingProjectList .liPartition{
+    width: 100%;
+  }
+  .qualityPolicyData .container > .row{
+   flex-direction: column-reverse;
+  }
 }
 @media (max-width: 767.98px) {
   .footer,
@@ -318,41 +341,21 @@
 .TeamMemberImg {
   width: 30%;
 }
-}
-@media screen and (max-width: 600px) {
-  .generalComparisonsTable table, .generalComparisonsTable.buildingProjectPage0 table {
-    min-width: unset;
-    width: 100%;
-  }
-  .generalComparisonsTable th:first-of-type {
-    position: static;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    z-index: 2;
-  }
-  .generalComparisonsTable.ProductDiscriptionPage0 th:first-of-type,.generalComparisonsTable.buildingProjectPage0 th:first-of-type{
-    width: 100%;
-    max-width: 100%;
-  }
 
-
-  table.ResponsiveTable thead {
-    display: none;
-  }
-  table.ResponsiveTable tbody td {
-    display: block;
-  }
-  table.ResponsiveTable tbody tr td:first-child {
-    background: #666;
-    color: #fff;
-  }
-  table.ResponsiveTable tbody td:before {
-    content: attr(data-th);
-    font-weight: 700;
-    display: block;
-  }
+.perception .container {
+  padding: 0 12px ;
 }
+.perception{
+  background:  #d2d2d2;
+}
+.overseasContact .tab-content .row{
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 24px;
+}
+
+}
+
 @media (max-width: 575.98px) {
   #ca1.owl-carousel .bannerCard {
     margin: auto;
