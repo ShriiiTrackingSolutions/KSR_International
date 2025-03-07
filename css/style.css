@@ -1460,15 +1460,13 @@ text-align: center;
 .overseasContact  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 0;
 }
 
 .overseasContact .nav-link {
   color: var(--accentColour);
   font-weight: 600;
   border-radius: 0;
+  letter-spacing: 1px;
 }
 
 .overseasContact .nav-pills{
