@@ -250,8 +250,11 @@
   .buildingProjectList .liPartition{
     width: 100%;
   }
-  .qualityPolicyData .container > .row{
-   flex-direction: column-reverse;
+  .qualityPolicyData  .qualityPolicy1{
+    order: 2;
+  }
+  .qualityPolicyData  .qualityPolicy2{
+    order: 3;
   }
 }
 @media (max-width: 767.98px) {
