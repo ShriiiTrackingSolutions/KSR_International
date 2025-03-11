@@ -857,6 +857,12 @@ span.display-3 {
   left: 0;
   top: 6px;
 }
+.serviceSection .tab-content ul li .ListIcon{
+  width: 18px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
 
 
 
@@ -1468,7 +1474,7 @@ text-align: center;
   margin: 0;
   margin-top: 8px;
 }
-.MultiAddUl pre{
+pre{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
