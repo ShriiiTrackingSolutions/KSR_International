@@ -316,6 +316,10 @@
     max-width: 154px !important;
     margin: auto;
   }
+  .footer ul.contact-info{
+    width: 296.5px;
+    max-width: 296.5px;
+  }
   .BannerWithText {
     padding: 50px 20px;
   }

@@ -512,8 +512,8 @@ span.display-3 {
   background: 0 0 / cover #2b3283;
 }
 .footer .footer-brand {
-  display: table;
-  width: 60%;
+  display: block;
+  width: 200px;
   min-width: 150px;
   margin: auto;
   margin-bottom: 16px;
@@ -534,6 +534,9 @@ span.display-3 {
   margin-right: 8px;
   font-size: 15px;
   color: var(--primary-color);
+}
+.exploreLinks1 .centerStyle{
+  text-transform: none;
 }
 .contact-info,
 .footer .exploreLinks ul li {
@@ -585,6 +588,11 @@ span.display-3 {
   font-size: 20px;
   margin-right: 10px;
 }
+.footer ul.contact-info{
+  width: 296.5px;
+  max-width: 296.5px;
+}
+
 .locationLink {
   display: inline-block;
   position: relative;
@@ -743,6 +751,10 @@ span.display-3 {
   border: 0;
   border-radius: 60px;
 }
+.justifyText{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .serviceSection .nav-pills .nav-link:hover {
   background: #408cff;
   color: #fff;
@@ -836,6 +848,13 @@ span.display-3 {
 }
 
 .technicalAndSaftyTraining .tab-content ul li svg{
+  top: 6px;
+}
+
+.technicalAndSaftyTraining .tab-content ul li .ListIcon{
+  width: 18px;
+  position: absolute;
+  left: 0;
   top: 6px;
 }
 
@@ -1449,6 +1468,10 @@ text-align: center;
   margin: 0;
   margin-top: 8px;
 }
+.MultiAddUl pre{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .MultiAddUl address{
   margin-bottom: 0;
   max-width: 350px;
@@ -1467,6 +1490,24 @@ text-align: center;
   font-weight: 600;
   border-radius: 0;
   letter-spacing: 1px;
+  position: relative;
+}
+.overseasContact .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  z-index: 1;
+  transition: none;
+  opacity: 0;
+}
+
+.overseasContact  .nav-pills .nav-link.active{
+  opacity: 1;
+  animation: slide 2s infinite;
 }
 
 .overseasContact .nav-pills{
