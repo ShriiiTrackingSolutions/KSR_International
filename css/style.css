@@ -1370,6 +1370,13 @@ display: none;
   position: absolute;
   left: 0;
 }
+.fitnessSection ul li .ListIcon{
+  margin-right: 8px;
+  top: 4px;
+  width: 24px;
+  position: absolute;
+  left: 0;
+}
 
 
 /* fitness Section end */
