@@ -1285,6 +1285,11 @@ display: none;
 .input-group > .form-select {
   padding: 0 0 20px;
 }
+.contFormFlexLinks{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 .form-control.is-valid:focus,
 .was-validated .form-control:valid:focus {
   box-shadow: none;

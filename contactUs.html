@@ -281,30 +281,30 @@ Gujarat, India
 
                 <form class="row needs-validation ContactForm" id="contactForm" novalidate="">
 
-                    <div class="col-lg-6">
-                        <div class="col-12">
+                    <div class="col-12 contFormFlexLinks">
+                          <div class="col-sm-6 col-12 pe-sm-4">
                             <label for="validationCustom01" class="form-label">Your Name </label>
                             <input type="text" class="form-control" id="validationCustom01" required="">
                             <div class="invalid-feedback">Please enter your name.</div>
                           </div>
-                          <div class="col-12">
+                          <div class="col-sm-6 col-12 pe-sm-4">
+                            <label for="validationSubject" class="form-label">Your Company Name </label>
+                            <input type="text" class="form-control" id="validationSubject" required="">
+                            <div class="invalid-feedback">Please enter your Subject.</div>
+                          </div>       
+                    </div>
+
+                    <div class="col-12 contFormFlexLinks">
+                        
+                          <div class="col-sm-6 col-12 pe-sm-4">
                             <label for="validationEmail" class="form-label">Your Email </label>
                             <input type="text" class="form-control" id="validationEmail">
                           </div>
-                         
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="col-12">
+                          <div class="col-sm-6 col-12 pe-sm-4">
                             <label for="PhoneNo" class="form-label">Your Mobile Number </label>
                             <input type="number" class="form-control" id="PhoneNo" required="">
                             <div class="invalid-feedback">Please enter your Mobile Number.</div>
                           </div>
-                        <div class="col-12">
-                            <label for="validationSubject" class="form-label">Subject </label>
-                            <input type="text" class="form-control" id="validationSubject" required="">
-                            <div class="invalid-feedback">Please enter your Subject.</div>
-                          </div> 
                     </div>
                     <div class="col-12">
                         <div class="mb-3">
@@ -820,7 +820,7 @@ Gujarat, India
           const message = $("#validationTextarea").val();
     
           // Construct the WhatsApp message
-          return `Hello, I have an enquiry:\n\nName: ${name}\nEmail: ${email || "Not provided"}\nPhone: ${phone}\nSubject: ${Subject || "Not provided"}\nMessage: ${message || "Not provided"}`;
+          return `Hello, I have an enquiry:\n\nName: ${name}\nCompany Name: ${Subject || "Not provided"}\nEmail: ${email || "Not provided"}\nPhone: ${phone}\nMessage: ${message || "Not provided"}`;
       }
   
       // Form Validation Function
