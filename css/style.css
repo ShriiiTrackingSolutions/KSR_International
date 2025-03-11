@@ -1491,6 +1491,7 @@ text-align: center;
   border-radius: 0;
   letter-spacing: 1px;
   position: relative;
+  overflow: hidden;
 }
 .overseasContact .nav-link::before {
   content: "";
@@ -1502,12 +1503,21 @@ text-align: center;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
   z-index: 1;
   transition: none;
+  pointer-events: none;
   opacity: 0;
 }
 
-.overseasContact  .nav-pills .nav-link.active{
-  opacity: 1;
+.overseasContact  .nav-pills .nav-link.active::before{
+  opacity: 0.7;
   animation: slide 2s infinite;
+}
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .overseasContact .nav-pills{
