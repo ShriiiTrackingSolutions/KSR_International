@@ -366,6 +366,28 @@
   font-size: 10px;
 }
 
+#PDF_Modal .modal-title{
+  font-size: 16px !important;
+}
+#PDF_Modal .modal-header {
+  padding: 8px;
+  padding-right: 12px;
+}
+#PDF_Modal p {
+  margin-top: 8px;
+  color: var(--darkGrey);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#PDF_Modal .col-md-12.mb-4 {
+  margin-top: 4px !important;
+  margin-bottom: 8px !important;
+}
+#PDF_Modal .form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
 }
 
 @media (max-width: 575.98px) {
