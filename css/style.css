@@ -644,6 +644,67 @@ span.display-3 {
   padding: 12px 0;
   color: #fff;
 }
+.PDF_Btn{
+  color: #e6e6e6;
+  padding: 0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.PDF_Btn:hover{
+  color: var(--primary-color);
+}
+
+.exploreLinks1 .btn-check:checked+.btn,.exploreLinks1 .btn.active,.exploreLinks1 .btn.show,.exploreLinks1 .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--primary-color);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#pdfForm{
+  text-align: left;
+}
+#PDF_Modal p{
+  margin-top: 16px;
+  color: var(--darkGrey);
+  margin-bottom: 20px;
+}
+#pdfForm input{
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 0 0 4px;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #0000001a;
+  background-color: #02010100;
+  margin-bottom: 24px;
+}
+
+#pdfForm  .form-control:focus {
+  background-color: #02010100;
+  border-color: #0000001a;
+  outline: 0;
+  box-shadow: none;
+}
+#pdfForm  .form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  box-shadow: none;
+}
+
+#pdfForm  .btnFillSmall{
+  border: none !important;
+  display: table;
+  margin: auto;
+}
+
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+
 .f-bottom .row {
   align-items: center;
   row-gap: 8px;
