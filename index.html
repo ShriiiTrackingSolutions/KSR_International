@@ -126,7 +126,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
-                      <a class="nav-link active" aria-current="page" href ="index.html"
+                      <a class="nav-link" aria-current="page" href ="index.html"
                         >Home</a
                       >
                     </li>
@@ -176,8 +176,20 @@
                         <li><a class="dropdown-item" href="certification.html"> Certification</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery
+                      </a>
+                      <ul class="dropdown-menu">     
+                        <li><a class="dropdown-item" href="officeGallery.html"> Office Gallery</a></li>
+                        <li><a class="dropdown-item" href="Substation_Design.html"> Substation Design</a></li>
+                        <li><a class="dropdown-item" href="Technical_Workshop.html"> Technical Workshop</a></li>
+                        <li><a class="dropdown-item" href="Training_And_Distance_Learning.html"> Training_And_Distance_Learning</a></li>
+                        <li><a class="dropdown-item" href="With_Client.html"> With Client</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contactUs.html">Contact</a>
@@ -187,7 +199,148 @@
                 </div>
               </div>
             </nav>
-          
+            <!-- <nav class="mynavbar  bg-light">
+              <div class="container header">
+                <a class="brandLogo d-inline-block d-lg-none" href="index.html">
+                  <img src="image/KSR_Logo.png" alt="KSR Logo">
+                 </a>
+                <button class="navToggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul class="navMenu me-auto mb-2 mb-lg-0">
+                  <li class="nav-close">
+                    <button class="btn-nav-close">
+                      <span class="close-btn">+</span>
+                    </button>
+                  </li>
+                  <li class="navLi">
+                    <a class="navLink active" aria-current="page" href ="index.html">Home</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">About </a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="aboutKSR.html" class="navLink">About KSR</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="WhatWeDo.html" class="navLink">What WE Do ?</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="managementPerception.html" class="navLink">Management Perception</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="leadershipTeam.html" class="navLink">Our leadership Team</a>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                
+                  <li class="navLi">
+                    <a href="#" class="navLink">Services</a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="multiDisciplineEngineering.html" class="navLink">Multidisciplinary Engineering</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="integratedBuildingEngineering.html" class="navLink">Integrated Building Engineering</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="specializedEngineeringServices.html" class="navLink">Specialized Engineering Services</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="fitnessForService.html" class="navLink">Fitness for Service</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="IndustrialTraining.html" class="navLink">Industrial Training</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="EngineeringSoftware.html" class="navLink">Engineering Software</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">Projects</a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="OilAndGasProject.html" class="navLink">Oil & Gas Project</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="buildingProject.html" class="navLink">Building Project</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="landmarkProject.html" class="navLink">Landmark Project</a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">Quality</a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="qualityPolicy.html" class="navLink">Quality Policy</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="qualityProcedures.html" class="navLink">Quality Procedures</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="certification.html" class="navLink">Certification</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  <li class="navLi">
+                    <a href="gallery.html" class="navLink">Gallery</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="contactUs.html" class="navLink">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+
+
+<script>
+
+const toggleBtn = document.querySelector(".navToggle");
+const navbarNav = document.querySelector(".navMenu");
+const navCloseBtn = document.querySelector(".btn-nav-close");
+
+toggleBtn.addEventListener("click", () => {
+	navbarNav.classList.toggle("active");
+});
+navCloseBtn.addEventListener("click", () => {
+	navbarNav.classList.remove("active");
+});
+
+</script> -->
+
+                   <!-- <li class="navLi">
+                        <a href="#" class="navLink">Dropdown lavel-1 </a>
+                        <ul class="dropdownList">
+                          <li class="navLi">
+                            <a href="#" class="navLink">Dropdown lavel-2</a>
+                          </li>
+                          <li class="navLi">
+                            <a href="#" class="navLink">Dropdown lavel-2</a>
+                          </li>
+                          <li class="navLi">
+                            <a href="#" class="navLink">Dropdown lavel-2 </a>
+                            <ul class="dropdownList">
+                              <li class="navLi">
+                                <a href="#" class="navLink">Dropdown lavel-3</a>
+                              </li>
+                              <li class="navLi">
+                                <a href="#" class="navLink">Dropdown lavel-3</a>
+                              </li>
+                              <li class="navLi">
+                                <a href="#" class="navLink">Dropdown lavel-3</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li> -->
+
           </div>
         </div>
       </div>
