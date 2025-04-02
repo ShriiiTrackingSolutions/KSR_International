@@ -49,6 +49,39 @@ body {
 .teamMembers .container > .row {
   row-gap: 24px;
 }
+
+/* Disable pointer events & change appearance */
+.disabled-gallery {
+    pointer-events: none;  /* Disable click */
+    color: gray !important;  /* Make it look inactive */
+    cursor: not-allowed;  /* Show "not allowed" cursor */
+    position: relative;
+}
+
+/* Tooltip styling */
+.disabled-gallery::after {
+    content: "Gallery is currently disabled";  /* Tooltip text */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    bottom: 100%; /* Show tooltip above */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Show tooltip on hover */
+.disabled-gallery:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
 :root {
   --primary-color: #faaf40;
   --secondary-color: #922c2b;
@@ -1610,52 +1643,4 @@ ol.buildingProjectList{
   max-width: 1056px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.galleryCard{
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  color: var(--background-color);
-}
-.galleryCard span{
-  display: table;
-  font-weight: 600;
-  margin: 4px auto 0;
-  transition: color 0.3s ease-in-out;
-}
-.galleryCard:hover span{
-  color: var(--brandHover);
-}
-
-.overlay{
-position: relative;
-}
-.overlay::before{
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-opacity: 0;
-pointer-events: none;
-background-color: #0000009c;
-transition: opacity 0.3s ease-in-out;
-}
-.galleryCard:hover .overlay::before{
-  opacity: 1;
-}
-.galleryCardSection .container>.row{
-  row-gap: 24px;
-}
-.overlayText{
-  color: #ffffff00;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.galleryCard:hover .overlayText{
-  color: #ffffff;
 }
