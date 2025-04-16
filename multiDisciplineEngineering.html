@@ -649,7 +649,51 @@ Gujarat, India
       
           <div class="col-md-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
             <h5  class="fourthH centerStyle">e-Brochure</h5>
-            <a href="../image/PieChart.jpg" download="image/PieChart.jpg" class="pdf-button">Download PDF</a>
+
+          
+  <!-- Button trigger modal -->
+<button type="button" class="btn PDF_Btn" data-bs-toggle="modal" data-bs-target="#PDF_Modal">
+  Click here to download
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="PDF_Modal" tabindex="-1" aria-labelledby="PDF_ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <h1 class="modal-title fs-5" id="PDF_ModalLabel">Please provide your Company Name and Email Address, and we will send it directly to your inbox.</h1>
+          <p>We truly appreciate your cooperation.</p>
+          <form id="pdfForm" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12 mb-4">
+              <label for="emailValidate" class="form-label">Email</label>
+              <div class="input-group has-validation">    
+                <input type="email" class="form-control" id="emailValidate" required>
+                <div class="invalid-feedback">
+                  Please enter a valid email.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-4">
+              <label for="companyName" class="form-label">Company Name</label>
+              <input type="text" class="form-control" id="companyName" required>
+              <div class="invalid-feedback">
+                Please provide your company name.
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class=" btnFillSmall">Email Me The e-Catalogue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       
           </div>
       

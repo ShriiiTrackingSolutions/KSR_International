@@ -828,24 +828,7 @@ Gujarat, India
 })
 
     </script>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("pdfForm");
-    
-        form.addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent form from reloading the page
-    
-          if (!form.checkValidity()) {
-            event.stopPropagation();
-          } else {
-            alert("Form submitted successfully!"); // Replace this with AJAX if needed
-          }
-    
-          form.classList.add("was-validated"); // Apply Bootstrap validation styles
-        });
-      });
-    </script>
+   
 
     <script defer src="js/script.js"></script>
   </body>

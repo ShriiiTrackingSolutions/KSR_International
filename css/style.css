@@ -1431,6 +1431,70 @@ margin-bottom: 20px;
 .contactIco {
   margin-right: 8px;
 }
+
+#desktopBtn:hover {
+  background-color: var(--accentColour) ;
+}
+
+#desktopBtn:active{
+background-color: #7dde1c;
+}
+#alertBox .alert.alert-success.alert-dismissible.fade.show {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1066;
+}
+
+#alertBox  .alert-success {
+ background-color: #e3f5ff !important;
+ text-align: center;
+}
+
+#alertBox .alert {
+  width: 400px;
+  max-width: 400px;
+}
+#alertBox  .alert-success.alert-dismissible {
+  padding: 40px;
+}
+
+.successIco{
+  display: table;
+  margin: auto;
+  margin-bottom: 8px;
+}
+.successIco .iconify{
+  font-size: 60px;
+  display: inline-block;
+  color: var(--green);
+  margin-bottom: 30px;
+}
+.sucMessage{
+  display: flex;
+  text-align: left;
+  align-items: center;
+  line-height: 20px;
+  gap: 16px;
+  padding: 16px;
+  background-color: #2a6fdd34;
+  border-radius: 4px;
+}
+.emIcon{
+  font-size: 24px;
+  flex: 0 0 auto;
+  width: auto;
+}
+.sucText{
+  flex: 1 0 0%;
+}
+.dulText{
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+
 .mapSection iframe {
   height: 500px;
 }
