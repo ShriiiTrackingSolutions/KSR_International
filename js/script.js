@@ -32,7 +32,7 @@ $(function(){var e=["https://web.whatsapp.com/send?phone=917043435987","https://
           const email = document.getElementById("emailValidate").value;
           const companyName = document.getElementById("companyName").value;
           try {
-            const response = await fetch("https://ksrback-product.up.railway.app/api/sendCompanyEmail", {
+            const response = await fetch("https://ksrback-pro.up.railway.app/api/sendCompanyEmail", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, companyName }),
