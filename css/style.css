@@ -1581,6 +1581,9 @@ background-color: #7dde1c;
 .buildingProjectList .liPartition{
   width: 49%;
 }
+.buildingProjectList .liPartition.proceduresPage{
+  width: 100%;
+}
 
 /* oil and gas project css end */
 
