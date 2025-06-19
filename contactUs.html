@@ -292,6 +292,14 @@ Gujarat, India
               </div>
   
               <div class="col-xl-6 formPart">
+                  <!-- Loader -->
+<div id="contactLoader" class="text-center my-4" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <p>Sending your message...</p>
+</div>
+
 
                 <form class="row needs-validation ContactForm " id="contactForm" novalidate="">
 
@@ -369,6 +377,9 @@ Gujarat, India
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="unitedArabEmirates-tab" data-bs-toggle="pill" data-bs-target="#unitedArabEmirates" type="button" role="tab" aria-controls="unitedArabEmirates" aria-selected="false">United Arab Emirates</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="SouthKorea-tab" data-bs-toggle="pill" data-bs-target="#SouthKorea" type="button" role="tab" aria-controls="SouthKorea" aria-selected="false">South Korea</button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
@@ -550,6 +561,66 @@ PO Box: 932,
             </div>
            </div>
         </div>
+        <div class="tab-pane fade" id="SouthKorea" role="tabpanel" aria-labelledby="SouthKorea-tab" tabindex="0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-7 col-md-6">
+                <h3 class="therdH">South Korea</h3>
+                <span class="fifthH">Address</span>
+                  <ul class="MultiAddUl">
+                     <li>
+                      <address>                      
+<pre>
+Mr. Young Soon (YS) LEE ILYANG Co., LTD.,
+351-32 Geojebuk-ro, Yeoncho-myeon, 
+Geoje-si, Gyeongsangnam-do 53210, 
+<strong>Korea Republic</strong>
+</pre>                                               
+                      </address>
+                     </li>
+                     <li>
+                       <div class="pho_em_Links">
+                        
+                        <span class="col">
+                         <a href="mailto:ys.lee@il-yang.net"><span class="iconify mb-1" data-icon="line-md:email-multiple-twotone" ></span> ys.lee@il-yang.net</a>   
+                         <br>      
+                         <a href="mailto:ys.lee@il-yang.net"><span class="iconify mb-1" data-icon="line-md:email-multiple-twotone" ></span> yslee2029@gmail.com</a>         
+                       </span>
+                      </div>
+                     </li>
+                     <li>
+                       <div class="pho_em_Links">
+                       
+                        <span class="col">
+                         <a href="tel:+821066842029">
+  <span class="iconify" data-icon="line-md:phone-call-loop" data-inline="false"></span>
+  +82 10 6684 2029
+</a>
+<br>
+<a href="tel:+82556333891">
+  <span class="iconify" data-icon="line-md:phone-call-loop" data-inline="false"></span>
+  +82 55 633 3891
+</a>
+
+                        </span>
+                      </div>
+                     </li>
+                     <li>
+                     <div class="pho_em_Links">
+                     
+                      <span class="col">
+                       <a href="http://www.global-il-yang.co.kr"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="mdi:internet" class="iconify mb-1 iconify--mdi"><path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg> http://www.global-il-yang.co.kr</a>
+                     </span>
+                    </div>
+                   </li>
+                  </ul>
+              </div>
+              <div class="col-xxl-4 align-self-end col-lg-5 col-md-6">
+                <img src="image/SouthKorea.webp" alt="South Korea landmark pic">
+              </div>
+            </div>
+           </div>
+        </div>
       </div>
     </div>
 </section>
@@ -688,15 +759,20 @@ Gujarat, India
         <div class="container-fluid">
           <h1 class="modal-title fs-5" id="PDF_ModalLabel">Please provide your Company Name and Email Address, and we will send it directly to your inbox.</h1>
           <p>We truly appreciate your cooperation.</p>
+          <div id="loader" class="text-center" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <p>Sending your request...</p>
+</div>
+
           <form id="pdfForm" class="row g-3 needs-validation" novalidate>
             <div class="col-md-12 mb-4">
               <label for="emailValidate" class="form-label">Email</label>
-              <div class="input-group has-validation">    
-                <input type="email" class="form-control" id="emailValidate" required>
+              <input type="email" class="form-control" id="emailValidate" required>
                 <div class="invalid-feedback">
                   Please enter a valid email.
                 </div>
-              </div>
             </div>
             <div class="col-md-12 mb-4">
               <label for="companyName" class="form-label">Company Name</label>
@@ -829,7 +905,8 @@ Gujarat, India
   })();
 </script>
 
-<script>
+
+<!-- <script>
   document.getElementById("contactForm").addEventListener("submit", async function (event) {
     event.preventDefault(); // Prevent page refresh
 
@@ -839,6 +916,7 @@ Gujarat, India
     const mobile = document.getElementById("ValidatePhone").value;
     const message = document.getElementById("ValidateMessage").value;
     const alertBox = document.getElementById("alertBox"); // Bootstrap alert div
+    const formElement = document.getElementById("contactForm");
 
     try {
       const response = await fetch("https://ksrbackend-3.onrender.com/api/sendEmail", {
@@ -869,10 +947,10 @@ Gujarat, India
                     <div class="dulText mt-3">
                       <span>Don't see our email? Check your spam folder</span>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>`;
 
-        document.getElementById("contactForm").reset(); // Reset form fields
+        // Hide the form
+        formElement.style.display = "none";
       } else {
         alertBox.innerHTML = `
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -888,7 +966,128 @@ Gujarat, India
         </div>`;
     }
   });
+</script> -->
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("ValidateName").value;
+    const companyName = document.getElementById("ValidateCompany").value;
+    const email = document.getElementById("ValidateEmail").value;
+    const mobile = document.getElementById("ValidatePhone").value;
+    const message = document.getElementById("ValidateMessage").value;
+    const alertBox = document.getElementById("alertBox");
+    const formElement = document.getElementById("contactForm");
+    const loader = document.getElementById("contactLoader");
+    const submitButton = document.getElementById("desktopBtn");
+
+    // ✅ Show loader and disable button
+    loader.style.display = "flex";
+    submitButton.disabled = true;
+
+    try {
+      const response = await fetch("https://ksrbackend-3.onrender.com/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, companyName, email, mobile, message }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        // ✅ Keep your custom success alert template
+        alertBox.innerHTML = `
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <div class="successIco">
+              <span class="iconify mb-1" data-icon="qlementine-icons:success-16"></span>
+            </div>
+            <h3 class="therdH">Submission is Successful</h3>
+            <div class="sucMessage">
+              <div class="emIcon">
+                <span class="iconify mb-1" data-icon="line-md:email-multiple-twotone"></span>
+              </div>
+              <div class="sucText">We have sent you a submission message to your Email.</div>
+            </div>
+            <a class="btnMedium mt-4" target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+              <span class="btnFillSmall mt-3">Open Email</span>
+            </a>
+            <br>
+            <div class="dulText mt-3">
+              <span>Don't see our email? Check your spam folder</span>
+            </div>
+          </div>`;
+        formElement.reset();
+        formElement.style.display = "none";
+      } else {
+        alertBox.innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> ${result.error}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>`;
+      }
+    } catch (error) {
+      alertBox.innerHTML = `
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Error!</strong> Something went wrong.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
+    }
+
+    // ✅ Hide loader and re-enable button
+    loader.style.display = "none";
+    submitButton.disabled = false;
+  });
 </script>
+
+
+<!-- <script>
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById('ValidateName').value,
+      company: document.getElementById('ValidateCompany').value,
+      email: document.getElementById('ValidateEmail').value,
+      phone: document.getElementById('ValidatePhone').value,
+      message: document.getElementById('ValidateMessage').value
+    };
+
+    // fetch("https://script.google.com/macros/s/AKfycbyyMcGtTCqv6MuWEifsOraJ_-iUj0j5B07CAvW5g14RqRA74X9aag1YtQBpi4397qgawQ/exec", {
+    //   method: "POST",
+    //   body: JSON.stringify(data),
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   }
+    // })
+
+    fetch("https://script.google.com/macros/s/AKfycbyyMcGtTCqv6MuWEifsOraJ_-iUj0j5B07CAvW5g14RqRA74X9aag1YtQBpi4397qgawQ/exec", {
+  method: "POST",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "text/plain"
+  }
+})
+
+
+      .then(response => response.json())
+      .then(res => {
+        if (res.result === "success") {
+          alert("Form submitted successfully!");
+          form.reset();
+        } else {
+          alert("Something went wrong.");
+        }
+      })
+      .catch(error => {
+        alert("Error: " + error.message);
+      });
+  });
+</script> -->
+
+
 
     <script defer src="js/script.js"></script>
   </body>

@@ -427,15 +427,20 @@ Gujarat, India
         <div class="container-fluid">
           <h1 class="modal-title fs-5" id="PDF_ModalLabel">Please provide your Company Name and Email Address, and we will send it directly to your inbox.</h1>
           <p>We truly appreciate your cooperation.</p>
+          <div id="loader" class="text-center" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <p>Sending your request...</p>
+</div>
+
           <form id="pdfForm" class="row g-3 needs-validation" novalidate>
             <div class="col-md-12 mb-4">
               <label for="emailValidate" class="form-label">Email</label>
-              <div class="input-group has-validation">    
-                <input type="email" class="form-control" id="emailValidate" required>
+              <input type="email" class="form-control" id="emailValidate" required>
                 <div class="invalid-feedback">
                   Please enter a valid email.
                 </div>
-              </div>
             </div>
             <div class="col-md-12 mb-4">
               <label for="companyName" class="form-label">Company Name</label>
@@ -453,6 +458,7 @@ Gujarat, India
     </div>
   </div>
 </div>
+
 
       
           </div>

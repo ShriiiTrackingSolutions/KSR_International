@@ -432,6 +432,16 @@
     transform: unset;
     width: auto;
   }
+  #alertBox .alert-success.alert-dismissible {
+    padding: 8px;
+}
+.formPart {
+    padding: 12px;
+}
+#alertBox .alert {
+    width: auto;
+    max-width: 400px;
+}
 }
 @media only screen and (max-height: 539.98px) and (max-width: 1024px) {
   #ca1.owl-carousel .item {
