@@ -418,6 +418,9 @@
     padding-left: 0;
     padding-right: 48px;
   }
+  .navbar-brandHome {
+    width: 220px;
+}
 }
 @media only screen and (max-height: 539.98px) {
   #ca1.owl-carousel .item {

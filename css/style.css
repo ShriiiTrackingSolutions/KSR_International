@@ -282,11 +282,26 @@ span.display-3 {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
 .navbar-brand {
+    display: inline-block;
+    margin-right: 45px;
+    padding-right: 10px;
+    width: 168px;
+}
+
+
+.navbar-brandHome {
   display: inline-block;
   margin-right: 45px;
   padding-right: 10px;
-  width: 168px;
+  width: 261px;
+}
+.navbar-brandAbout {
+  display: inline-block;
+  margin-right: 45px;
+  padding-right: 10px;
+  width: 150px;
 }
 .navbar-nav .nav-link {
   font-weight: 600;
@@ -547,6 +562,20 @@ span.display-3 {
 .footer .footer-brand {
   display: block;
   width: 200px;
+  min-width: 150px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+.footer .footer-brandHome {
+  display: block;
+  max-width: 270px;
+  min-width: 150px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+.footer .footer-brandAbout {
+  display: block;
+  max-width: 164px;
   min-width: 150px;
   margin: auto;
   margin-bottom: 16px;
